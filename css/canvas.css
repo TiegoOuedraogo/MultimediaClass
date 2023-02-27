@@ -1,0 +1,16 @@
+body{
+    background-color: whitesmoke;
+}
+
+.myCanvas{
+    /* border-color: rgb(0, 255, 128);
+    border: 1px solid;
+    height: 750px;
+    width: 1398px; */
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+
+}
+
