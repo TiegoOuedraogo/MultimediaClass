@@ -11,6 +11,7 @@ ctx.beginPath();
 ctx.arc(100, 100, 50, 0, 2 * Math.PI);
 ctx.fillStyle = "#FFD700";
 ctx.fill();
+
 // Draw ground
 ctx.beginPath();
 ctx.rect(0, canvas.height-50, canvas.width, 50);
@@ -30,13 +31,73 @@ for(var i=0; i<100; i++) {
     ctx.closePath();
 }
 
-// Draw the clouds
-ctx.beginPath();
-ctx.arc(200, 150, 50, 0, 2 * Math.PI);
-ctx.arc(250, 150, 50, 0, 2 * Math.PI);
-ctx.arc(300, 150, 50, 0, 2 * Math.PI);
-ctx.fillStyle = "#FFFFFF";
-ctx.fill();
+// Initialize cloud variables
+let cloud1_x = 200;
+let cloud1_y = 150;
+let cloud2_x = 50;
+let cloud2_y = 50;
+let cloud3_x = 350;
+let cloud3_y = 100;
+
+// Start the animation loop
+function draw() {
+  // Clear the canvas
+  // ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // // Draw the sky
+  // ctx.fillStyle = 'skyblue';
+  // ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  // // Draw the sun
+  // ctx.fillStyle = 'yellow';
+  // ctx.beginPath();
+  // ctx.arc(100, 100, 50, 0, Math.PI * 2);
+  // ctx.fill();
+
+  // Draw the clouds
+  ctx.fillStyle = 'white';
+  ctx.beginPath();
+  ctx.arc(cloud1_x, cloud1_y, 30, 0, Math.PI * 2);
+  ctx.arc(cloud1_x + 30, cloud1_y, 30, 0, Math.PI * 2);
+  ctx.arc(cloud1_x + 60, cloud1_y, 30, 0, Math.PI * 2);
+  ctx.fill();
+
+  ctx.beginPath();
+  ctx.arc(cloud2_x, cloud2_y, 20, 0, Math.PI * 2);
+  ctx.arc(cloud2_x + 20, cloud2_y, 20, 0, Math.PI * 2);
+  ctx.arc(cloud2_x + 40, cloud2_y, 20, 0, Math.PI * 2);
+  ctx.fill();
+
+  ctx.beginPath();
+  ctx.arc(cloud3_x, cloud3_y, 40, 0, Math.PI * 2);
+  ctx.arc(cloud3_x + 30, cloud3_y, 40, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Move the clouds
+  // if (cloud1_x > canvas.width + 40) {
+  //   cloud1_x = -40;  // Move to the left edge
+  // } else {
+  //   cloud1_x += 1;  // Move to the right
+  // }
+
+  // if (cloud2_y < -20) {
+  //   cloud2_y = canvas.height + 20;  // Move to the bottom edge
+  // } else {
+  //   cloud2_y -= 1;  // Move upwards
+  // }
+
+  if (cloud3_x < -70) {
+    cloud3_x = canvas.width + 70;  // Move to the right edge
+  } else {
+    cloud3_x -= 1;  // Move to the left
+  }
+
+  // Request the next animation frame
+  // requestAnimationFrame(draw);
+}
+
+draw();
+
 
 // Draw the mountains
 ctx.beginPath();
@@ -73,28 +134,6 @@ ctx.fill();
 ctx.fillStyle = "brown";
 ctx.fillRect(130, 300, 20, 90);
 
-// Draw full moon
-// ctx.beginPath();
-// ctx.arc(700, 100, 50, 0, 2 * Math.PI);
-// ctx.fillStyle = "#FFFFFF";
-// ctx.fill();
-// ctx.beginPath();
-// ctx.arc(675, 75, 10, 0, 2 * Math.PI);
-// ctx.fillStyle = "#FFFFFF";
-// ctx.fill();
-// ctx.beginPath();
-// ctx.arc(725, 75, 10, 0, 2 * Math.PI);
-// ctx.fillStyle = "#FFFFFF";
-// ctx.fill();
-// ctx.beginPath();
-// ctx.arc(675, 125, 10, 0, 2 * Math.PI);
-// ctx.fillStyle = "#FFFFFF";
-// ctx.fill();
-// ctx.beginPath();
-// ctx.arc(725, 125, 10, 0, 2 * Math.PI);
-// ctx.fillStyle = "#FFFFFF";
-// ctx.fill();
-
 // Draw the half-moon
 ctx.beginPath();
 ctx.arc(700, 100, 45,135, Math.PI, 2*Math.PI);
@@ -104,20 +143,6 @@ ctx.fill();
 
 ctx.arc(100, 50, 50, Math.PI, 2*Math.PI);
 
-// Draw the apartment building
-ctx.fillStyle = "red";
-ctx.fillRect(500, 100, 200, 400);
-
-// Draw the windows
-ctx.fillStyle = "#ffffff";
-for (let i = 0; i < 8; i++) {
-  ctx.fillRect(520, 120 + i * 50, 40, 30);
-  ctx.fillRect(640, 120 + i * 50, 40, 30);
-}
-
-// Draw the door
-ctx.fillStyle = "#a0522d";
-ctx.fillRect(570, 420, 60, 80);
 
 // Draw living quarters
 ctx.beginPath();
