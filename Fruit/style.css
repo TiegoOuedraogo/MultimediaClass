@@ -1,0 +1,15 @@
+.chart-container {
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+}
+
+canvas {
+	border: 5px  double rgb(31, 152, 232);
+	padding: 1px;
+}
+
+.chart-title {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
