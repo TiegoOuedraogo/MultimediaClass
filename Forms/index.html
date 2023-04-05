@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactive Display</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weight and Temperature Conversion</h1>
+      <div class="input">
+        <label for="value">Enter value:</label>
+        <input type="text" id="value" name="value">
+      </div>
+      <div class="radio-buttons">
+        <label for="weight">Weight:</label>
+        <input type="radio" id="kg-to-lbs" name="conversion" value="kg-to-lbs">
+        <label for="kg-to-lbs">Kilograms to Pounds</label>
+        <input type="radio" id="lbs-to-kg" name="conversion" value="lbs-to-kg">
+        <label for="lbs-to-kg">Pounds to Kilograms</label>
+      </div>
+      <div class="radio-buttons">
+        <label for="temperature">Temperature:</label>
+        <input type="radio" id="c-to-f" name="conversion" value="c-to-f">
+        <label for="c-to-f">Celsius to Fahrenheit</label>
+        <input type="radio" id="f-to-c" name="conversion" value="f-to-c">
+        <label for="f-to-c">Fahrenheit to Celsius</label>
+      </div>
+      <div class="buttons">
+        <button id="convert">Convert</button>
+        <button id="reset">Reset</button>
+        <button id="history">History</button>
+      </div>
+      <div class="output">
+        <p id="result"></p>
+      </div>
+      <div class="history">
+        <h2>Conversion History</h2>
+        <ul id="history-list"></ul>
+        <button id="clear-history">Clear History</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
