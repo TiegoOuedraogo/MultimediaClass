@@ -1,0 +1,48 @@
+body {
+    background-image: url('/InterestCalculator/dollars.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(11, 10, 10);
+    font-family: Arial, sans-serif;
+  } 
+  
+  .container{
+    background-color: #563D7C;
+    padding: 20px;
+  }
+.form-group{
+background-color: rgb(221, 230, 189) ;
+}
+  
+  .form-control {
+    color: black;
+    font-weight: bold;
+  }
+ .display-4{
+    color: #fff;
+ }
+
+ .table{
+    color: #fff;
+ }
+
+ #total, #monthly {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+  
+  form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  label {
+    font-weight: bold;
+  }

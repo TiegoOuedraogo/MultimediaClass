@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interest Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container mt-5">
+  <div class="jumbotron">
+    <h1 class="display-4">Interest Calculator</h1>
+    <p class="lead">Calculate the amount of money after interest for a given initial amount, interest rate, and number of years.</p>
+    <form id="interest-form">
+      <div class="form-group">
+        <label for="initial-amount">Initial amount:</label>
+        <input type="number" class="form-control" id="initial-amount" name="initial-amount" required>
+      </div>
+      <div class="form-group">
+        <label for="interest-rate">Interest rate:</label>
+        <input type="number" step="0.01" class="form-control" id="interest-rate" name="interest-rate" required>
+      </div>
+      <div class="form-group">
+        <label for="years">Number of years:</label>
+        <input type="number" class="form-control" id="years" name="years" required>
+      </div>
+      <div class="form-group">
+        <label for="monthly-payment">Monthly payment:</label>
+        <input type="number" class="form-control" id="monthly-payment" name="monthly-payment">
+      </div>
+      <button type="submit" class="btn btn-primary">Calculate</button>
+      <button type="reset" class="btn btn-secondary ml-2">Reset</button>
+    </form>
+    <div class="mt-4">
+      <h2>Result:</h2>
+      <p id="result"></p>
+    </div>
+    <div class="mt-4">
+      <h2>Saved Results:</h2>
+      <table class="table" id="results-table">
+        <thead>
+          <tr>
+            <th>Number</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

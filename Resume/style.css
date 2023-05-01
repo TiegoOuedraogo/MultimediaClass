@@ -1,0 +1,105 @@
+/* Body Style */
+/* body {
+    background-image: url('background.jpeg');
+    background-size: cover;
+    background-position: center;
+  } */
+  
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    background-color: #8c07b829;
+  }
+  
+  /* Navigation Bar Style */
+  .navbar {
+    background-color: #fff;
+    color: #fff;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+  }
+
+  /* Jumbotron Style */
+  .jumbotron {
+    background-color: #007bff;
+    color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius:90%;
+    border: dotted;
+  }
+  .headerLinks{
+    color: #fff;
+  }
+  /* Education & Training Section Style */
+  .container h2:first-child {
+    margin-top: 3rem;
+    border: dotted;
+
+  }
+  
+  /* Skills Section Style */
+  .container ul {
+    list-style-type: none;
+    border: solid;
+
+  }
+  
+  /* Relevant Experiences Section Style */
+  .container h4 {
+    margin-top: 2rem;
+    font-weight: bold;
+    border: double;
+
+  }
+  
+  /* Technical Projects Section Style */
+  .container h4:first-child {
+    margin-top: 3rem;
+  }
+  
+  /* Activities Section Style */
+  .container h2:last-child {
+    margin-top: 3rem;
+  }
+  
+  /* Footer Style */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .footer a {
+    color: #fff !important;
+    margin: 0 1rem;
+  }
+  
+  /* Media Query for Small Screens */
+  @media only screen and (max-width: 768px) {
+    .jumbotron h1 {
+      font-size: 2rem;
+    }
+    
+    .jumbotron p {
+      font-size: 1rem;
+    }
+    
+    .container h2 {
+      font-size: 1.5rem;
+    }
+    
+    .container h4 {
+      font-size: 1.25rem;
+    }
+  }
+  

@@ -1,0 +1,23 @@
+body {
+    background-image: url('/Calculator/dollars.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(11, 10, 10);
+  } 
+  
+  .jumbotron {
+    background-color: #563D7C;
+    padding: 20px;
+  }
+  
+  .form-control {
+    color: black;
+    font-weight: bold;
+  }
+ .display-4{
+    color: #fff;
+ }
+
+ .table{
+    color: #d90808;
+ }
