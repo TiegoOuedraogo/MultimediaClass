@@ -1,3 +1,7 @@
+body{
+    background-image: url('/Grid/hasky.jpeg');
+    scroll-behavior: smooth;
+}
 h1 {
     text-align: center;
     margin-top: 50px;
@@ -12,4 +16,10 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  
+  .container{
+    background-color: #000;
+  }
+  .card-title{
+    background-color: aqua;
+    color: #000;
+  }
