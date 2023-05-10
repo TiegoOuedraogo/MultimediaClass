@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sound Machine</title>
-    <link type="stylesheet" href="style.css">
-  </head>
-  <body>
-    <canvas id="sound-machine" width="400" height="200"></canvas>
-    <audio id="sound1" src="musics/music1.mp3"></audio>
-    <audio id="sound2" src="musics/sound2.mp3"></audio>
-    <audio id="sound3" src="musics/sound3.mp3"></audio>
-    <audio id="sound4" src="musics/sound4.mp3"></audio>
-    <audio id="sound5" src="musics/sound5.mp3"></audio>
-    <!-- <audio id="sound6" src="musics/sound6.mp3"></audio> -->
-    <button id="button1" class="sound-button">Funny</button>
-    <button id="button2" class="sound-button">Moaning</button>
-    <button id="button3" class="sound-button">Gun</button>
-    <button id="button4" class="sound-button">Birds</button>
-    <button id="button5" class="sound-button">Nature</button>
-    <!-- <button id="button6" class="sound-button">Sound 6</button>  -->
+    <title>Audio Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sound Effects</h1>
+    <div class="button-container">
+        <button onclick="playSound('bang.mp3')">Bang</button>
+        <button onclick="playSound('brain-damage.mp3')">Brain Damage</button>
+        <button onclick="playSound('horror-hit-logo.mp3')">Horror Hit Logo</button>
+        <button onclick="playSound('no-evidence-of-disease.mp3')">No Evidence Of Disease</button>
+        <button onclick="playSound('wrong-place.mp3')">Wrong Place</button>
+    </div>
+    <audio id="sound" src=""></audio>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
