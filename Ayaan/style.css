@@ -1,17 +1,38 @@
 body{
-    background-color: aqua;
+    background-color: rgb(25,119,242);
 }
 .invitation-container {
     text-align: center;
+    color: #ffffff;
     padding: 20px;
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-style: italic;
   }
   
 .photo-container {
-    display: inline-block;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 20px;
-  } 
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  animation: bouncePhoto 2s infinite ease-in-out;
+}
+
+@keyframes bouncePhoto {
+  0%, 100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-20px, -20px) scale(1.1);
+  }
+  50% {
+    transform: translate(20px, -20px) scale(0.9);
+  }
+  75% {
+    transform: translate(20px, 20px) scale(1.1);
+  }
+}
 
   img {
     width: 300px;
@@ -20,6 +41,7 @@ body{
   
   .text-container {
     text-align: center;
+    color: white;
   }
   
   h1 {
@@ -28,7 +50,24 @@ body{
   }
   
   p {
-    font-size: 16px;
+    font-size: 30px;
     margin-bottom: 5px;
+    font-weight: bolder;
+    font-style: italic;
   } 
   
+  #date, #time, #location {
+    animation: colorChange 4s infinite;
+  }
+  
+  @keyframes colorChange {
+    25% {
+      color: #fff;
+      transform: translate(-20px, -20px) scale(1.1);
+    }
+    50% {
+      color: #00ff00;
+      transform: translate(-20px, -20px) scale(1.1);
+
+    }
+  }
