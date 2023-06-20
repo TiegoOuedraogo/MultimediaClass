@@ -1,11 +1,12 @@
 body{
-    background-color: rgb(25,119,242);
+background-image: url("back2.avif");
 }
+
 .invitation-container {
     text-align: center;
-    color: #ffffff;
+    color: #000;
     padding: 20px;
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 5px;
     font-weight: bolder;
     font-style: italic;
@@ -19,29 +20,24 @@ body{
   animation: bouncePhoto 2s infinite ease-in-out;
 }
 
-@keyframes bouncePhoto {
-  0%, 100% {
-    transform: translate(0);
-  }
-  25% {
-    transform: translate(-20px, -20px) scale(1.1);
-  }
-  50% {
-    transform: translate(20px, -20px) scale(0.9);
-  }
-  75% {
-    transform: translate(20px, 20px) scale(1.1);
-  }
+#frame {
+  background-image: url("backg1.webp");
+  display: inline-block;
+  border-radius: 20%;
+  border: 5px solid #000;
+  padding: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: shatterAnimation 2s forwards;
+
 }
 
-  img {
-    width: 300px;
-    height: 300px;
-  }
-  
+#frame{
+  height: 700px;
+  margin-top: 250px;
+}
   .text-container {
     text-align: center;
-    color: white;
+    color: #000;
   }
   
   h1 {
@@ -62,12 +58,25 @@ body{
   
   @keyframes colorChange {
     25% {
-      color: #fff;
+      color: #f80606;
       transform: translate(-20px, -20px) scale(1.1);
     }
     50% {
-      color: #00ff00;
+      color: #0fcf32;
       transform: translate(-20px, -20px) scale(1.1);
 
     }
   }
+
+  #slideshow-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #slideshow-image {
+    max-width: 500px;
+    max-height: 500px;
+    border: 5px solid #000;
+    border-radius: 10px;
+  }
+  
